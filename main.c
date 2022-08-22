@@ -20,9 +20,6 @@ int main()
     usb_init();
     while (1)
     {
-        status_led_set(1);
-        usb_poll();
-        status_led_set(0);
         usb_poll();
     }
 }
