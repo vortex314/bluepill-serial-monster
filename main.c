@@ -1,6 +1,6 @@
 /*
- * MIT License 
- * 
+ * MIT License
+ *
  * Copyright (c) 2020 Kirill Kotyagin
  */
 
@@ -11,13 +11,18 @@
 #include "device_config.h"
 #include "usb.h"
 
-int main() {
+int main()
+{
     system_clock_init();
     system_interrupts_init();
     device_config_init();
     status_led_init();
     usb_init();
-    while (1) {
+    while (1)
+    {
+        status_led_set(1);
+        usb_poll();
+        status_led_set(0);
         usb_poll();
     }
 }
