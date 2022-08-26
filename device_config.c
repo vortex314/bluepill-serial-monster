@@ -52,7 +52,7 @@ static const device_config_t default_device_config = {
                         /* dcd */ {.port = GPIOB, .pin = 8, .dir = gpio_dir_input, .pull = gpio_pull_up, .polarity = gpio_polarity_low},
                         /*  ri */ {.port = GPIOB, .pin = 12, .dir = gpio_dir_input, .pull = gpio_pull_up, .polarity = gpio_polarity_low},
 #ifdef MAPLE
-                        /* txa */ {.port = 0}, /*  pin is occupied by USB      */
+                        /* txa */ {.port = 0}, /*  pin is occupied by LED      */
 #else
                         /* txa */ {.port = GPIOB, .pin = 1, .dir = gpio_dir_output, .speed = gpio_speed_medium, .func = gpio_func_general, .output = gpio_output_pp, .polarity = gpio_polarity_high},
 #endif
@@ -68,7 +68,7 @@ static const device_config_t default_device_config = {
                         /* dsr */ {.port = GPIOB, .pin = 6, .dir = gpio_dir_input, .pull = gpio_pull_up, .polarity = gpio_polarity_low},
                         /* dtr */ {.port = GPIOA, .pin = 6, .dir = gpio_dir_output, .speed = gpio_speed_medium, .func = gpio_func_general, .output = gpio_output_pp, .polarity = gpio_polarity_low},
 #ifdef MAPLE
-                        /* dcd */ {.port = 0}, /*  pin is occupied by USB      */
+                        /* dcd */ {.port = 0}, /*  pin is occupied by USB reset     */
 #else
                         /* dcd */ {.port = GPIOB, .pin = 9, .dir = gpio_dir_input, .pull = gpio_pull_up, .polarity = gpio_polarity_low},
 #endif
