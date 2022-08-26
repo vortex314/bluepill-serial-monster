@@ -1,3 +1,19 @@
+# maple-serial-monster
+
+The original project on the blue pill has been cloned, so for the bluepill please use the original github repo.
+
+I added 2 features
+- Build easily with the platformio plugin in vscode ( it addresses all pre-requisites )
+- Support the  [Maple mini board](https://www.leaflabs.com/maple) 
+
+Since some pins needed to be remapped , it is possible that not all settings are possible. 
+As my need was limited to pure transmit/receive this was not an issue.
+
+## maple build instructions
+- Follow these [instructions ](https://platformio.org/install/ide?install=vscode) and install vscode+platformio for you platform 
+- Go to the folder where you downloaded this project
+- Press build and download to the maple via stlink. 
+
 # bluepill-serial-monster
 
 _bluepill-serial-monster_ is a firmware for _STM32 Blue Pill_ that turns it
