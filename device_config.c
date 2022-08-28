@@ -50,9 +50,14 @@ static const device_config_t default_device_config = {
                         /* dsr */ {.port = GPIOB, .pin = 4, .dir = gpio_dir_input, .pull = gpio_pull_up, .polarity = gpio_polarity_low},
                         /* dtr */ {.port = GPIOA, .pin = 5, .dir = gpio_dir_output, .speed = gpio_speed_medium, .func = gpio_func_general, .output = gpio_output_pp, .polarity = gpio_polarity_low},
                         /* dcd */ {.port = GPIOB, .pin = 8, .dir = gpio_dir_input, .pull = gpio_pull_up, .polarity = gpio_polarity_low},
-                        /*  ri */ {.port = GPIOB, .pin = 12, .dir = gpio_dir_input, .pull = gpio_pull_up, .polarity = gpio_polarity_low},
 #ifdef MAPLE
-                        /* txa */ {.port = 0}, /*  pin is occupied by LED      */
+                        /* ri */ {.port = 0}, /*  pin is pulled up by JTAG-TRST      */
+#else
+                        /*  ri */ {.port = GPIOB, .pin = 12, .dir = gpio_dir_input, .pull = gpio_pull_up, .polarity = gpio_polarity_low},
+#endif
+#ifdef MAPLE
+                        /* txa */ {.port = GPIOA, .pin = 7, .dir = gpio_dir_output, .speed = gpio_speed_medium, .func = gpio_func_general, .output = gpio_output_pp, .polarity = gpio_polarity_high},
+ /*  pin PB1 is occupied by LED , but needs txa otherwise memfault , re-use ACM2 pin.  If needed adapt the code.     */
 #else
                         /* txa */ {.port = GPIOB, .pin = 1, .dir = gpio_dir_output, .speed = gpio_speed_medium, .func = gpio_func_general, .output = gpio_output_pp, .polarity = gpio_polarity_high},
 #endif

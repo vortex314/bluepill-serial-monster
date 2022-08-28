@@ -8,6 +8,16 @@ I added 2 features
 
 Since some pins needed to be remapped , it is possible that not all settings are possible. 
 As my need was limited to pure transmit/receive this was not an issue.
+My firt use case was to control a main hoverboard and 1 or 2 sideboards via a serial protocol. 
+
+# Kicad board
+
+Under the kicad directory you can find the design of a small board with 4 pst connectors : 3 x USART + 1 SWD. 
+Most PCB fabs accept the gerber.zip file.
+
+# Doc directory
+
+This contains soem additional documentation on the maple mini board. 
 
 ## maple build instructions
 - Follow these [instructions ](https://platformio.org/install/ide?install=vscode) and install vscode+platformio for you platform 

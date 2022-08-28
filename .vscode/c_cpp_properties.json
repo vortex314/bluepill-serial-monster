@@ -8,8 +8,8 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/lieven/workspace/bluepill-serial-monster/Inc",
-                "/home/lieven/workspace/bluepill-serial-monster",
+                "/home/lieven/workspace/maple-serial-monster/Inc",
+                "/home/lieven/workspace/maple-serial-monster",
                 "/home/lieven/.platformio/packages/framework-stm32cubef1/Drivers/CMSIS/Include",
                 "/home/lieven/.platformio/packages/framework-stm32cubef1/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
                 "/home/lieven/.platformio/packages/framework-stm32cubef1/Drivers/STM32F1xx_HAL_Driver/Inc",
@@ -61,8 +61,8 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/lieven/workspace/bluepill-serial-monster/Inc",
-                    "/home/lieven/workspace/bluepill-serial-monster",
+                    "/home/lieven/workspace/maple-serial-monster/Inc",
+                    "/home/lieven/workspace/maple-serial-monster",
                     "/home/lieven/.platformio/packages/framework-stm32cubef1/Drivers/CMSIS/Include",
                     "/home/lieven/.platformio/packages/framework-stm32cubef1/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
                     "/home/lieven/.platformio/packages/framework-stm32cubef1/Drivers/STM32F1xx_HAL_Driver/Inc",
